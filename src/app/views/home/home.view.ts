@@ -9,23 +9,23 @@ export class HomeView implements OnInit {
   links = [
     {
       label: 'Sign Up',
-      route: 'sign-up',
+      route: '/sign-up',
     },
     {
       label: 'Checkout',
-      route: 'checkout',
+      route: '/checkout',
     },
     {
       label: 'Landing Page',
-      route: 'landing-page',
+      route: '/landing-page',
     },
     {
       label: 'Application Icon',
-      route: 'application-icon',
+      route: '/application-icon',
     },
     {
       label: 'User Profile',
-      route: 'user-profile',
+      route: '/user-profile',
     },
   ];
   constructor() { }
