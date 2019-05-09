@@ -1,3 +1,101 @@
-<div fxFlexFill fxLayoutAlign="center center">
-	
+<div class="landing-page__content" fxFlexFill fxLayout="column">
+	<div class="landing-page__header" fxFlex="200px">
+		<div class="landing-page__toolbar" fxLayout="row">
+			<app-logo class="landing-page__toolbar-logo" size="35"></app-logo>
+			<h1 class="landing-page__toolbar-title">Ryan Kara</h1>
+			<div fxFlex="auto"></div>
+			<ul class="landing-page__toolbar-navigation" fxLayout="row">
+				<a class="landing-page__toolbar-navigation-button" href="#">Home</a>
+				<a class="landing-page__toolbar-navigation-button" href="#">Contact</a>
+			</ul>
+		</div>
+		<div class="landing-page__header-content">
+			<mat-card class="landing-page__search-panel" fxLayout="row">
+				<input class="landing-page__search-panel-field"
+        fxFlex="auto" placeholder="Search..."/>
+          <button mat-icon-button>
+              <mat-icon aria-label="Search">search</mat-icon>
+          </button>
+      </mat-card>
+    </div> 
+    <div class="landing-page__gradient landing-page__skew"></div>
+  </div>
+
+  <div class="landing-page__panel-items">
+    <mat-card class="landing-page__panel-item" fxLayout="column">
+      <div fxFlex="100px" fxLayoutAlign="center center">
+        <i class="landing-page__panel-item-icon fas fa-bolt"></i>
+      </div>
+      <div fxFlex="auto" fxLayoutAlign="center center">
+        <p>
+          I take the time to learn about you, your business, and the goals you have for your new website before I work on it.
+        </p>
+      </div>
+    </mat-card>
+
+    <mat-card class="landing-page__panel-item" fxLayout="column">
+      <div fxFlex="100px" fxLayoutAlign="center center">
+        <i class="landing-page__panel-item-icon fas fa-rocket"></i>
+      </div>
+      <div fxFlex="auto" fxLayoutAlign="center center">
+        <p>
+          You provide the direction for your website, and I turn it into a reality.
+        </p>
+      </div>
+    </mat-card>
+
+    <mat-card class="landing-page__panel-item landing-page__panel-item--highlight" fxLayout="column">
+      <div fxFlex="40px" fxLayout="row" fxLayoutGap="10px">
+        <a href="https://www.facebook.com/rkara.us" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/RyanLKara" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ryankara/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.rkara.us/" target="_blank"><i class="fab fa-wordpress"></i></a>
+      </div>
+      <div fxFlex="auto" class="landing-page__panel-item-text">
+        <p>
+          Follow RKARA.US to see the various projects being worked on.
+        </p>
+      </div>
+    </mat-card>
+
+  </div>
+  
+  <my-about></my-about>
+  <my-contact></my-contact>
+
+  <div class="landing-page__footer" fxFlex="500px">
+    <div fxLayout="row" class="landing-page__footer-content" fxLayoutGap="10px">
+      <div class="landing-page__footer-item" fxFlex fxLayout="column">
+        <div>
+          <a class="landing-page__footer-content-licensing" href="https://creativecommons.org/licenses/by/4.0/" target="_BLANK">
+            <img src="https://creativecommons.org/images/deed/cc_icon_white_x2.png"/>
+            <img src="https://creativecommons.org/images/deed/attribution_icon_white_x2.png"/>
+          </a>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <app-logo size="25"></app-logo>
+          <span>RKARA.US LLC</span>
+        </div>
+      </div>
+      <div class="landing-page__footer-item" fxFlex>
+        <h4>Links</h4>
+        <ul class="landing-page__footer-navigation" fxLayout="column">
+          <a class="landing-page__footer-navigation-button" href="#">Home</a>
+          <a class="landing-page__footer-navigation-button" href="#">Contact</a>
+        </ul>
+      </div>
+      <div class="landing-page__footer-item" fxFlex fxLayout="column">
+        <h4>Follow RKARA.US</h4>
+        <div fxFlex="40px" fxLayout="row" fxLayoutGap="10px" class="landing-page__footer-social">
+          <a href="https://www.facebook.com/rkara.us" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/RyanLKara" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/ryankara/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.rkara.us/" target="_blank"><i class="fab fa-wordpress"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="landing-page__gradient landing-page__skew"></div>
+  </div>
 </div>

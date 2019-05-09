@@ -4,6 +4,7 @@
 @import './components/sign-up/_sign-up.theme';
 @import './components/calculator/_calculator.theme';
 @import './components/user-profile/_user-profile.theme';
+@import './views/landing-page/_landing-page.theme';
 
 @mixin app-theme($theme) {
   $primary: map-get($theme, primary);
@@ -12,6 +13,7 @@
   @include signup-theme($theme);
   @include calculator-theme($theme);
   @include user-profile-theme($theme);
+  @include landing-page-theme($theme);
 
   .app__content {
   	color: #fff;

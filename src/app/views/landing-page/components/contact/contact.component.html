@@ -1,0 +1,20 @@
+<div class="contact__form" fxFlexFill>
+	<mat-card class="contact__form-panel">
+		<mat-card-title>Contact Us</mat-card-title>
+		<mat-card-content fxLayout="column">
+			<mat-form-field class="contact__form-input">
+				<input matInput placeholder="Name" [(ngModel)]="model.name"/>
+        </mat-form-field>
+        <mat-form-field class="contact__form-input">
+          <input matInput placeholder="Email" [(ngModel)]="model.email"/>
+        </mat-form-field>    
+        <mat-form-field class="contact__form-inpu">
+          <textarea matInput placeholder="Message..." [(ngModel)]="model.message"></textarea>
+        </mat-form-field>            
+      </mat-card-content>
+      <mat-card-actions fxLayoutAlign="end">
+          <button mat-raised-button
+          (click)="_onContact()" class="contact__form-button" color="primary">Send</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

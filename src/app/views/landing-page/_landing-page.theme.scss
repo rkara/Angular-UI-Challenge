@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+@import './components/contact/_contact.theme';
+@import './components/about/_about.theme';
+
+@mixin landing-page-theme($theme) {
+  $primary: map-get($theme, primary);
+  $foreground: map-get($theme, foreground);
+
+  @include contact-theme($theme);
+  @include about-theme($theme);
+
+  .landing-page__toolbar-title {
+    color: white; // mat-color($primary, 'default');
+  }
+
+  .landing-page__footer-content {
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+
+  .landing-page__panel-item-icon {
+    color: mat-color($primary, 'default');
+  }
+
+  .landing-page__footer-navigation-button,
+  .landing-page__toolbar-navigation-button {
+    transition: color 0.3s ease;
+    color: white; // mat-color($foreground, text);
+  }
+
+  .landing-page__footer-navigation-button--active,
+  .landing-page__footer-navigation-button:hover,
+  .landing-page__toolbar-navigation-button--active,
+  .landing-page__toolbar-navigation-button:hover {
+    color: mat-color($primary, 900);
+  }
+
+  .landing-page__panel-item a {
+    transition: color 0.3s ease;
+    color: white;
+  }
+
+  .landing-page__panel-item a:hover {
+    color: mat-color($primary, 100)
+  }
+
+  .landing-page__panel-item--highlight {
+    background-color: mat-color($primary, 'default') !important;
+    color: white !important;
+  }
+}

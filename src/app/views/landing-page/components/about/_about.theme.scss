@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+
+@mixin about-theme($theme) {
+  $primary: map-get($theme, primary);
+  $foreground: map-get($theme, foreground);
+
+  .about {
+    color: white;
+  }
+
+  .about__header {
+    background-color: mat-color($primary, 'default');
+  }
+
+  .about a {
+    color: white;
+  }
+
+  .about__content {
+    color: mat-color($foreground, text);
+
+    a {
+      color: mat-color($primary, 'default');
+      font-weight: 500;
+    }
+  }
+}

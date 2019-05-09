@@ -1,0 +1,41 @@
+.about {
+    padding: 0;
+  }
+  
+  .about a {
+    text-decoration: none;
+  }
+  
+  .about h3 {
+    margin-top: 10px;
+  }
+  
+  .about__bold {
+    font-weight: 500;
+  }
+  
+  .about__header {
+    padding: 15px;
+  }
+  
+  .about__header h2 {
+    font-size: 32px;
+  }
+  
+  .about__content {
+    padding: 15px;
+  }
+  
+  .about__content img {
+    width: 100%;
+  }
+  
+  .about__table {
+    margin-left: -15px;
+  }
+  
+  .about__table thead tr th,
+  .about__table td {
+    text-align: left;
+    padding: 5px 15px;
+  }

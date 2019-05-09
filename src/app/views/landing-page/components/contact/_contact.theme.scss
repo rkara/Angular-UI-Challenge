@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+
+@mixin contact-theme($theme) {
+  .contact__form-button {
+    color: white !important;
+    text-transform: uppercase;
+  }
+}
