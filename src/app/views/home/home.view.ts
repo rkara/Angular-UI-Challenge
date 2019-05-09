@@ -27,10 +27,6 @@ export class HomeView implements OnInit {
       label: 'User Profile',
       route: 'user-profile',
     },
-    {
-      label: 'Settings',
-      route: 'settings',
-    },
   ];
   constructor() { }
 
