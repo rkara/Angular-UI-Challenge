@@ -1,0 +1,38 @@
+<mat-card fxFlexFill class="calculator" fxLayout="column">
+	<div class="calculator__screen" fxFlex="200px" fxLayout="column">
+		<div class="calculator__screen-answer" fxFlex>
+			{{ answer | number }}
+		</div>
+		<div class="calculator__screen-input" fxFlex="40px">
+			{{ inputStr }}
+		</div>
+	</div>
+	<div class="calculator__inputs" fxFlex="auto" fxLayout="column">
+		<div class="calculator__input-row" fxFlex="25%" fxLayout="row">
+			<app-calculator-button fxFlex="75%" (buttonClick)="input($event)" displayChar="C" operator="true"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="+" operator="true"></app-calculator-button>
+		</div>
+		<div class="calculator__input-row" fxFlex="25%" fxLayout="row">
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="7"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="8"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="9"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="-" operator="true"></app-calculator-button>
+		</div>
+		<div class="calculator__input-row" fxFlex="25%" fxLayout="row">
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="4"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="5"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="6"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="/" operator="true"></app-calculator-button>
+		</div>
+		<div class="calculator__input-row" fxFlex="25%" fxLayout="row">
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="1"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="2"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="3"></app-calculator-button>
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="*" operator="true"></app-calculator-button>
+		</div>
+		<div class="calculator__input-row" fxFlex="25%" fxLayout="row">
+			<app-calculator-button fxFlex="25%" (buttonClick)="input($event)" displayChar="0"></app-calculator-button>
+			<app-calculator-button fxFlex="75%" (buttonClick)="input($event)" displayChar="=" equals="true"></app-calculator-button>
+		</div>
+	</div>
+</mat-card>

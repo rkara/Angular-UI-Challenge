@@ -1,0 +1,23 @@
+.calculator {
+  padding: 0;
+}
+
+.calculator__screen-answer,
+.calculator__screen-input {
+  text-align: right;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calculator__screen-answer {
+  font-size: 64px;
+  line-height: 100px;
+}
+
+.calculator__screen-input {
+  font-size: 32px;
+  line-height: 32px;
+  opacity: 0.75;
+}

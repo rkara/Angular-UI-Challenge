@@ -1,0 +1,11 @@
+<div fxFlexFill fxLayoutAlign="center center">
+	<mat-card class="home" fxLayout="column">
+    <div fxFlex="150px" class="home__info">
+      <h1>Ryan Kara</h1>
+      <h3>UI Challenge</h3>
+    </div>
+		<mat-nav-list class="home__list" fxFlex="auto">
+			<a mat-list-item [routerLink]="link.route" *ngFor="let link of links"> {{ link.label }} </a>
+		</mat-nav-list>
+	</mat-card>
+</div>

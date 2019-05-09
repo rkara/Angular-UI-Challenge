@@ -1,0 +1,49 @@
+$brand-color: #42a5f5;
+
+.logo .logo__svg .primary {
+  fill: $brand-color;
+}
+
+.logo .logo__svg .primary-shadow {
+  transition: fill 0.4s ease;
+  fill: darken($brand-color, 10%);
+}
+
+.logo .logo__svg .shadow {
+  fill: rgba(0, 0, 0, 0.2);
+  transition: fill 0.4s ease;
+}
+
+.logo .logo__svg {
+  display: block;
+  font-family: Roboto, sans-serif !important;
+}
+
+.logo .logo__svg .text {
+  font-size: 60px;
+  font-weight: 500;
+  fill: #e6e6e6;
+}
+
+.logo:hover .logo__svg .shadow {
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+.logo:hover .logo__svg .primary-shadow {
+  fill: darken($brand-color, 20%);
+}
+
+.logo--inverse {
+  .logo__svg .primary {
+    fill: #fff;
+  }
+
+  .logo__svg .primary-shadow,
+  .logo__svg .shadow {
+    display: none;
+  }
+
+  .logo__svg .text {
+    fill: $brand-color;
+  }
+}

@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@mixin calculator-button-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .calculator-button--equals,
+  .calculator-button--operator {
+    background-color: mat-color($primary, 50);
+  }
+}

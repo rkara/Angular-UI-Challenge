@@ -1,0 +1,10 @@
+<button
+  class="calculator-button"
+  [class.calculator-button--operator]="operator"
+  [class.calculator-button--equals]="equals"
+  mat-button
+  color="primary"
+  fxFlexFill
+  (click)="onClick()">
+  {{ displayChar }}
+</button>

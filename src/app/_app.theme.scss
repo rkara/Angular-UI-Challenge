@@ -1,0 +1,60 @@
+@import '~@angular/material/theming';
+
+@import './views/home/_home.theme';
+@import './components/sign-up/_sign-up.theme';
+@import './components/calculator/_calculator.theme';
+@import './components/user-profile/_user-profile.theme';
+
+@mixin app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  @include home-theme($theme);
+  @include signup-theme($theme);
+  @include calculator-theme($theme);
+  @include user-profile-theme($theme);
+
+  .app__content {
+  	color: #fff;
+    background: linear-gradient(-45deg, mat-color($accent, 600), mat-color($primary, 'default'), mat-color($primary, 900));
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+}

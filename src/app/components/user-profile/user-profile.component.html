@@ -1,0 +1,17 @@
+<mat-card class="profile" fxLayout="column" fxFlexFill>
+	<div fxFlex="200px" class="profile__img-container" [style.background-image]="'url(' + backdrop + ')'">
+	</div>
+	<div class="profile__user-container">
+		<img class="profile__img mat-elevation-z2" [src]="img" />
+    <h2 class="profile__user-name">{{ name }}</h2>
+    <h3 class="profile__user-title">{{ title }}</h3>
+    </div>
+	<div class="profile__social-icons" fxFlex="40px" fxLayout="row" fxLayoutGap="15px">
+		<a class="profile__social-icon" *ngFor="let social of socialIcons" [href]="social.link" target="_blank">
+			<i [class]="social.icon"></i>
+    </a>
+  </div>
+  <p class="profile__tagline">
+    {{ tagline }}
+  </p>
+</mat-card>

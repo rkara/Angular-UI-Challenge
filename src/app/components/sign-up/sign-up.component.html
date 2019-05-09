@@ -1,0 +1,41 @@
+<mat-card class="sign-up" fxFlexFill fxLayout="column" fxLayoutGap="10px">
+	<app-logo class="sign-up__logo" size="60px"></app-logo>
+
+	<h2 class="sign-up__header">RKARA.US LLC</h2>
+
+	<ng-container *ngIf="!isLogin; else loginTmpl">
+		<div fxLayout="column" fxFlex="auto">
+			<mat-form-field class="sign-up__input-field">
+				<input matInput placeholder="Full Name" [(ngModel)]="model.name">
+      </mat-form-field>
+      <mat-form-field class="sign-up__input-field">
+        <input matInput placeholder="Email" [(ngModel)]="model.email">
+      </mat-form-field>  
+        <mat-form-field class="sign-up__input-field">
+        <input matInput placeholder="Password" type="password" [(ngModel)]="model.password">
+      </mat-form-field>
+    </div>
+    <button class="sign-up__button sign-up__button-sign-up" mat-raised-button color="primary" (click)="signUp()">Sign Up</button>
+
+    <p class="sign-up__text">Already have an account?</p>
+
+    <button class="sign-up__button" mat-raised-button (click)="isLogin = true">Sign In</button>
+  </ng-container>
+
+</mat-card>
+
+<ng-template #loginTmpl>
+  <div fxLayout="column" fxFlex="auto">
+    <mat-form-field class="sign-up__input-field">
+      <input matInput placeholder="Email" [(ngModel)]="model.email">
+    </mat-form-field>  
+      <mat-form-field class="sign-up__input-field">
+      <input matInput placeholder="Password" type="password" [(ngModel)]="model.password">
+    </mat-form-field>
+  </div>
+  <button class="sign-up__button sign-up__button-sign-up" mat-raised-button color="primary" (click)="signIn()">Sign In</button>
+
+  <p class="sign-up__text">Don't have an account?</p>
+
+  <button class="sign-up__button" mat-raised-button (click)="isLogin = false">Sign Up</button>
+</ng-template>

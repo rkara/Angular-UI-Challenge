@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@import './calculator-button/_calculator-button.theme';
+
+@mixin calculator-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  @include calculator-button-theme($theme);
+
+  .calculator__screen {
+    background-color: mat-color($primary, 'default');
+  }
+
+  .calculator__screen-answer,
+  .calculator__screen-input {
+    color: white;
+  }
+}

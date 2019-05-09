@@ -1,0 +1,43 @@
+.checkout {
+  padding: 0;
+}
+
+.checkout__content {
+  padding: 15px;
+}
+
+.checkout__checkout-button {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.checkout__content-input:first-of-type {
+  margin-top: 10px;
+}
+
+.checkout__content-input {
+  width: 100%;
+  display: block;
+}
+
+.checkout__mastercard-logo {
+  height: 25px;
+}
+
+.checkout__item-container {
+  position: relative;
+}
+
+.checkout__item-stats {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.checkout__item-stats-name {
+  font-weight: 500;
+}
+
+.checkout__item-image {
+  height: 225px;
+}

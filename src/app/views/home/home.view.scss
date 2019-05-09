@@ -1,0 +1,19 @@
+.home {
+  padding: 0;
+  width: 960px;
+  max-width: 90%;
+  max-height: 700px;
+}
+
+.home__info {
+  padding: 15px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  h1 {
+    font-weight: 500;
+  }
+}
+
+.home__list {
+  overflow: auto;
+}
