@@ -3,6 +3,8 @@ import { Route, RouterModule } from '@angular/router';
 
 import { SharedModule } from '../../shared/shared.module';
 import { LandingPageView } from './landing-page.view';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const ROUTES: Route[] = [
   { path: '', component: LandingPageView },
@@ -11,6 +13,8 @@ const ROUTES: Route[] = [
 @NgModule({
   declarations: [
     LandingPageView,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     SharedModule,
