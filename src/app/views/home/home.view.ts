@@ -20,6 +20,10 @@ export class HomeView implements OnInit {
       route: '/landing-page',
     },
     {
+      label: 'Calculator',
+      route: '/calculator',
+    },
+    {
       label: 'Application Icon',
       route: '/application-icon',
     },
